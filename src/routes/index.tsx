@@ -11,8 +11,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
       { name: "description", content: "Agriturismo a Fiano Romano (RM): sapori autentici della campagna romana, prodotti dell'orto e ospitalità di famiglia. Prenota: 333 288 5510." },
-      { property: "og:title", content: "Agriturismo Capodimonte — Fiano Romano" },
-      { property: "og:description", content: "Cucina della tradizione laziale, prodotti dell'orto e ospitalità di famiglia tra le colline di Fiano Romano." },
+      { property: "og:title", content: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
+      { property: "og:description", content: "Agriturismo a Fiano Romano (RM): sapori autentici della campagna romana, prodotti dell'orto e ospitalità di famiglia. Prenota: 333 288 5510." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],

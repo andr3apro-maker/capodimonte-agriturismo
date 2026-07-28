@@ -71,17 +71,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Agriturismo Capodimonte — Fiano Romano" },
+      { title: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
       {
         name: "description",
         content:
-          "Agriturismo Capodimonte a Fiano Romano: cucina laziale della tradizione, prodotti della terra e ospitalità di famiglia tra le colline di Roma.",
+          "Agriturismo a Fiano Romano (RM): sapori autentici della campagna romana, prodotti dell'orto e ospitalità di famiglia. Prenota: 333 288 5510.",
       },
       { name: "author", content: "Agriturismo Capodimonte" },
       { property: "og:site_name", content: "Agriturismo Capodimonte" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "it_IT" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
+      { name: "twitter:title", content: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
+      { property: "og:description", content: "Agriturismo a Fiano Romano (RM): sapori autentici della campagna romana, prodotti dell'orto e ospitalità di famiglia. Prenota: 333 288 5510." },
+      { name: "twitter:description", content: "Agriturismo a Fiano Romano (RM): sapori autentici della campagna romana, prodotti dell'orto e ospitalità di famiglia. Prenota: 333 288 5510." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b959e2c5-92a2-445a-a9e0-f81be340c9b8/id-preview-70d0e874--c2d6807e-ab8a-412e-8f9a-5c8276bcdf35.lovable.app-1782314168678.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b959e2c5-92a2-445a-a9e0-f81be340c9b8/id-preview-70d0e874--c2d6807e-ab8a-412e-8f9a-5c8276bcdf35.lovable.app-1782314168678.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
