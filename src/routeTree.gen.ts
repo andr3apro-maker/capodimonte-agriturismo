@@ -9,25 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as RistoranteRouteImport } from './routes/ristorante'
-import { Route as GalleriaRouteImport } from './routes/galleria'
-import { Route as ContattiRouteImport } from './routes/contatti'
-import { Route as ChiSiamoRouteImport } from './routes/chi-siamo'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ChiSiamoRouteImport } from './routes/chi-siamo'
+import { Route as ContattiRouteImport } from './routes/contatti'
+import { Route as GalleriaRouteImport } from './routes/galleria'
+import { Route as RistoranteRouteImport } from './routes/ristorante'
 
-const RistoranteRoute = RistoranteRouteImport.update({
-  id: '/ristorante',
-  path: '/ristorante',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GalleriaRoute = GalleriaRouteImport.update({
-  id: '/galleria',
-  path: '/galleria',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContattiRoute = ContattiRouteImport.update({
-  id: '/contatti',
-  path: '/contatti',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ChiSiamoRoute = ChiSiamoRouteImport.update({
@@ -35,9 +25,19 @@ const ChiSiamoRoute = ChiSiamoRouteImport.update({
   path: '/chi-siamo',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ContattiRoute = ContattiRouteImport.update({
+  id: '/contatti',
+  path: '/contatti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleriaRoute = GalleriaRouteImport.update({
+  id: '/galleria',
+  path: '/galleria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RistoranteRoute = RistoranteRouteImport.update({
+  id: '/ristorante',
+  path: '/ristorante',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -87,25 +87,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/ristorante': {
-      id: '/ristorante'
-      path: '/ristorante'
-      fullPath: '/ristorante'
-      preLoaderRoute: typeof RistoranteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/galleria': {
-      id: '/galleria'
-      path: '/galleria'
-      fullPath: '/galleria'
-      preLoaderRoute: typeof GalleriaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contatti': {
-      id: '/contatti'
-      path: '/contatti'
-      fullPath: '/contatti'
-      preLoaderRoute: typeof ContattiRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/chi-siamo': {
@@ -115,11 +101,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ChiSiamoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/contatti': {
+      id: '/contatti'
+      path: '/contatti'
+      fullPath: '/contatti'
+      preLoaderRoute: typeof ContattiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galleria': {
+      id: '/galleria'
+      path: '/galleria'
+      fullPath: '/galleria'
+      preLoaderRoute: typeof GalleriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ristorante': {
+      id: '/ristorante'
+      path: '/ristorante'
+      fullPath: '/ristorante'
+      preLoaderRoute: typeof RistoranteRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
