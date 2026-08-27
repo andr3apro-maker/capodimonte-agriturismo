@@ -71,6 +71,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-site-verification", content: "Cgk3CFNNHhTi61USE7OF8SNvBhgxZtdiBvr0E6wjkQ4" },
       { title: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
       {
         name: "description",
