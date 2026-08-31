@@ -91,8 +91,9 @@ function ChiSiamo() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-24">
+        <h2 className="sr-only">La campagna romana intorno all'agriturismo</h2>
         <div className="grain grain-overlay overflow-hidden rounded-3xl">
-          <img src={campagna} alt="La nostra campagna" width={1280} height={960} loading="lazy" className="h-[40vh] w-full object-cover" />
+          <img src={campagna} alt="Campagna romana intorno ad Agriturismo Capodimonte, agriturismo a conduzione familiare vicino a Roma" width={1280} height={960} loading="lazy" className="h-[40vh] w-full object-cover" />
         </div>
       </section>
     </article>
