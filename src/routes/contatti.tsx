@@ -55,7 +55,7 @@ function Contatti() {
       <section className="mx-auto max-w-6xl px-5 pb-16">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="font-display text-2xl">Indirizzo</h2>
+            <h2 className="font-display text-2xl">Indirizzo del ristorante a Fiano Romano</h2>
             <p className="mt-3 flex items-start gap-3 text-foreground/85">
               <MapPin className="mt-1 h-5 w-5 text-primary" strokeWidth={1.7} />
               <span>
