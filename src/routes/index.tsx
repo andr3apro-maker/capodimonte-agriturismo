@@ -9,13 +9,13 @@ import { SectionDivider } from "../components/site/SectionDivider";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
-      { name: "description", content: "Agriturismo a Fiano Romano (RM): sapori autentici della campagna romana, prodotti dell'orto e ospitalità di famiglia. Prenota: 333 288 5510." },
-      { property: "og:title", content: "Agriturismo Capodimonte — Cucina laziale a Fiano Romano" },
-      { property: "og:description", content: "Agriturismo a Fiano Romano (RM): sapori autentici della campagna romana, prodotti dell'orto e ospitalità di famiglia. Prenota: 333 288 5510." },
-      { property: "og:url", content: "/" },
+      { title: "Agriturismo Capodimonte | Agriturismo a Fiano Romano" },
+      { name: "description", content: "Agriturismo Capodimonte a Fiano Romano, nella campagna romana. Cucina tradizionale laziale, prodotti genuini e ospitalità in un ambiente autentico." },
+      { property: "og:title", content: "Agriturismo Capodimonte | Agriturismo a Fiano Romano" },
+      { property: "og:description", content: "Agriturismo Capodimonte a Fiano Romano, nella campagna romana. Cucina tradizionale laziale, prodotti genuini e ospitalità in un ambiente autentico." },
+      { property: "og:url", content: "https://agriturismocapodimonte.netlify.app/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://agriturismocapodimonte.netlify.app/" }],
   }),
   component: Home,
 });
@@ -41,8 +41,7 @@ function Home() {
             <Leaf className="h-3.5 w-3.5 text-secondary" /> Fiano Romano · dal 1985
           </span>
           <h1 className="mt-5 max-w-3xl font-display text-5xl leading-[1.05] text-white drop-shadow-md sm:text-6xl md:text-7xl">
-            Sapori autentici<br />
-            della campagna romana.
+            Agriturismo Capodimonte a Fiano Romano
           </h1>
           <p className="mt-5 max-w-xl text-base text-white/85 sm:text-lg">
             Un casale di famiglia immerso fra ulivi e vigneti, dove la cucina laziale incontra
