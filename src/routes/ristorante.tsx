@@ -6,13 +6,29 @@ import { SectionDivider } from "../components/site/SectionDivider";
 export const Route = createFileRoute("/ristorante")({
   head: () => ({
     meta: [
-      { title: "Ristorante — Agriturismo Capodimonte, Fiano Romano" },
-      { name: "description", content: "Menù dell'Agriturismo Capodimonte: antipasti della casa, pasta fatta a mano, abbacchio, saltimbocca e dolci della tradizione laziale." },
-      { property: "og:title", content: "Ristorante — Agriturismo Capodimonte" },
-      { property: "og:description", content: "Cucina laziale della tradizione, pasta fatta a mano e prodotti dell'orto." },
-      { property: "og:url", content: "/ristorante" },
+      { title: "Ristorante Fiano Romano | Agriturismo Capodimonte — Cucina laziale e romana" },
+      {
+        name: "description",
+        content:
+          "Ristorante a Fiano Romano presso l'Agriturismo Capodimonte, a pochi minuti da Roma. Cucina tradizionale laziale e piatti della cucina romana: pasta fatta a mano, abbacchio, saltimbocca e dolci della casa.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:title", content: "Ristorante Fiano Romano — Agriturismo Capodimonte" },
+      {
+        property: "og:description",
+        content:
+          "Ristorante a Fiano Romano presso l'Agriturismo Capodimonte: cucina tradizionale laziale e romana, pasta fatta a mano e prodotti dell'orto.",
+      },
+      { property: "og:url", content: "https://agriturismocapodimonte.netlify.app/ristorante" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Ristorante Fiano Romano — Agriturismo Capodimonte" },
+      {
+        name: "twitter:description",
+        content:
+          "Ristorante a Fiano Romano: cucina tradizionale laziale e romana presso l'Agriturismo Capodimonte.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/ristorante" }],
+    links: [{ rel: "canonical", href: "https://agriturismocapodimonte.netlify.app/ristorante" }],
   }),
   component: Ristorante,
 });
@@ -59,17 +75,18 @@ function Ristorante() {
     <article>
       <section className="relative isolate">
         <div className="absolute inset-0 -z-10">
-          <img src={sala} alt="Sala da pranzo dell'Agriturismo Capodimonte" width={1280} height={960} className="h-full w-full object-cover" />
+          <img src={sala} alt="Sala da pranzo del ristorante Agriturismo Capodimonte a Fiano Romano" width={1280} height={960} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/75 to-background" />
         </div>
         <div className="mx-auto max-w-4xl px-5 pb-16 pt-36 text-center">
-          <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Il ristorante</span>
+          <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Il ristorante a Fiano Romano</span>
           <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
-            La cucina della casa.
+            Ristorante a Fiano Romano: cucina laziale e romana.
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            Un menù di stagione che racconta la tradizione laziale.
-            Quello che segue è un assaggio: la carta cambia spesso, secondo l'orto e il mercato.
+            Presso l'Agriturismo Capodimonte, a pochi minuti da Roma, la cucina tradizionale laziale
+            si serve come una volta. Quello che segue è un assaggio: la carta cambia spesso,
+            secondo l'orto e il mercato.
           </p>
         </div>
       </section>
