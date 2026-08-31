@@ -6,13 +6,29 @@ import { SectionDivider } from "../components/site/SectionDivider";
 export const Route = createFileRoute("/chi-siamo")({
   head: () => ({
     meta: [
-      { title: "Chi siamo — Agriturismo Capodimonte" },
-      { name: "description", content: "La storia della famiglia Capodimonte: tre generazioni di cucina e accoglienza nella campagna di Fiano Romano." },
-      { property: "og:title", content: "Chi siamo — Agriturismo Capodimonte" },
-      { property: "og:description", content: "Tre generazioni di cucina e accoglienza nella campagna di Fiano Romano." },
-      { property: "og:url", content: "/chi-siamo" },
+      { title: "Agriturismo a Conduzione Familiare a Fiano Romano | Capodimonte" },
+      {
+        name: "description",
+        content:
+          "Agriturismo Capodimonte, agriturismo a conduzione familiare a Fiano Romano nella campagna romana vicino a Roma. Tre generazioni dedicati alla cucina tradizionale laziale e all'accoglienza.",
+      },
+      { property: "og:title", content: "Agriturismo a Conduzione Familiare a Fiano Romano | Capodimonte" },
+      {
+        property: "og:description",
+        content:
+          "La storia di Agriturismo Capodimonte, agriturismo a conduzione familiare a Fiano Romano, nella campagna romana: tre generazioni di cucina tradizionale laziale e accoglienza.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://agriturismocapodimonte.netlify.app/chi-siamo" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Agriturismo a Conduzione Familiare a Fiano Romano | Capodimonte" },
+      {
+        name: "twitter:description",
+        content:
+          "Agriturismo Capodimonte a Fiano Romano, nella campagna romana: tre generazioni di cucina tradizionale laziale e accoglienza familiare.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/chi-siamo" }],
+    links: [{ rel: "canonical", href: "https://agriturismocapodimonte.netlify.app/chi-siamo" }],
   }),
   component: ChiSiamo,
 });
