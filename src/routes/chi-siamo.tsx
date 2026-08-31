@@ -56,6 +56,7 @@ function ChiSiamo() {
 
       <section className="mx-auto max-w-3xl space-y-10 px-5 pb-16">
         <SectionDivider label="La nostra storia" />
+        <h2 className="sr-only">La nostra storia: tre generazioni di agriturismo a Fiano Romano</h2>
 
         <div className="space-y-6 text-lg leading-relaxed text-foreground/90">
           <p>
