@@ -5,13 +5,29 @@ import { SectionDivider } from "../components/site/SectionDivider";
 export const Route = createFileRoute("/contatti")({
   head: () => ({
     meta: [
-      { title: "Contatti — Agriturismo Capodimonte, Fiano Romano" },
-      { name: "description", content: "Agriturismo Capodimonte — Via Civitellese 3, 00065 Fiano Romano (RM). Telefono 333 288 5510. Trova indicazioni e contatti." },
-      { property: "og:title", content: "Contatti — Agriturismo Capodimonte" },
-      { property: "og:description", content: "Via Civitellese 3, Fiano Romano (RM). Tel 333 288 5510." },
-      { property: "og:url", content: "/contatti" },
+      { title: "Agriturismo Capodimonte Fiano Romano | Contatti e come arrivare" },
+      {
+        name: "description",
+        content:
+          "Contatti di Agriturismo Capodimonte a Fiano Romano (RM): Via Civitellese 3, telefono 333 288 5510. Indicazioni stradali e orari del ristorante in campagna, vicino a Roma.",
+      },
+      { property: "og:title", content: "Agriturismo Capodimonte Fiano Romano | Contatti e come arrivare" },
+      {
+        property: "og:description",
+        content:
+          "Come raggiungere Agriturismo Capodimonte a Fiano Romano (RM): indirizzo, telefono, orari e indicazioni stradali dal casello A1, a circa 40 minuti da Roma.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://agriturismocapodimonte.netlify.app/contatti" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Agriturismo Capodimonte Fiano Romano | Contatti e come arrivare" },
+      {
+        name: "twitter:description",
+        content:
+          "Contatti e indicazioni per Agriturismo Capodimonte a Fiano Romano (RM), ristorante in campagna vicino a Roma.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/contatti" }],
+    links: [{ rel: "canonical", href: "https://agriturismocapodimonte.netlify.app/contatti" }],
   }),
   component: Contatti,
 });
