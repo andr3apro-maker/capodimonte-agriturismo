@@ -37,14 +37,15 @@ function Contatti() {
   return (
     <article>
       <section className="mx-auto max-w-4xl px-5 pb-12 pt-24 text-center">
-        <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Contatti</span>
-        <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
-          Vieni a trovarci.
-        </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-          Siamo a Fiano Romano, a pochi minuti dal casello autostradale e
-          a circa 40 minuti dal centro di Roma.
-        </p>
+          <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Contatti</span>
+          <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
+            Agriturismo Capodimonte a Fiano Romano
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+            Agriturismo e ristorante a Fiano Romano (RM), nella campagna romana
+            a pochi minuti dal casello A1 e a circa 40 minuti da Roma. Ecco come
+            raggiungerci e prenotare il vostro tavolo.
+          </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-12">
