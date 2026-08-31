@@ -6,13 +6,29 @@ import { SectionDivider } from "../components/site/SectionDivider";
 export const Route = createFileRoute("/chi-siamo")({
   head: () => ({
     meta: [
-      { title: "Chi siamo — Agriturismo Capodimonte" },
-      { name: "description", content: "La storia della famiglia Capodimonte: tre generazioni di cucina e accoglienza nella campagna di Fiano Romano." },
-      { property: "og:title", content: "Chi siamo — Agriturismo Capodimonte" },
-      { property: "og:description", content: "Tre generazioni di cucina e accoglienza nella campagna di Fiano Romano." },
-      { property: "og:url", content: "/chi-siamo" },
+      { title: "Agriturismo a Conduzione Familiare a Fiano Romano | Capodimonte" },
+      {
+        name: "description",
+        content:
+          "Agriturismo Capodimonte, agriturismo a conduzione familiare a Fiano Romano nella campagna romana vicino a Roma. Tre generazioni dedicati alla cucina tradizionale laziale e all'accoglienza.",
+      },
+      { property: "og:title", content: "Agriturismo a Conduzione Familiare a Fiano Romano | Capodimonte" },
+      {
+        property: "og:description",
+        content:
+          "La storia di Agriturismo Capodimonte, agriturismo a conduzione familiare a Fiano Romano, nella campagna romana: tre generazioni di cucina tradizionale laziale e accoglienza.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://agriturismocapodimonte.netlify.app/chi-siamo" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Agriturismo a Conduzione Familiare a Fiano Romano | Capodimonte" },
+      {
+        name: "twitter:description",
+        content:
+          "Agriturismo Capodimonte a Fiano Romano, nella campagna romana: tre generazioni di cucina tradizionale laziale e accoglienza familiare.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/chi-siamo" }],
+    links: [{ rel: "canonical", href: "https://agriturismocapodimonte.netlify.app/chi-siamo" }],
   }),
   component: ChiSiamo,
 });
@@ -23,23 +39,24 @@ function ChiSiamo() {
       {/* Hero */}
       <section className="relative isolate">
         <div className="absolute inset-0 -z-10">
-          <img src={esterno} alt="Portico in pietra del casale Capodimonte" width={1280} height={960} className="h-full w-full object-cover" />
+          <img src={esterno} alt="Casale di Agriturismo Capodimonte, agriturismo a conduzione familiare a Fiano Romano nella campagna romana" width={1280} height={960} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
         </div>
         <div className="mx-auto max-w-4xl px-5 pb-20 pt-36 text-center">
           <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Chi siamo</span>
           <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
-            Una famiglia, una terra,<br />una cucina di casa.
+            Agriturismo a conduzione familiare<br />a Fiano Romano, nella campagna romana
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Da oltre quarant'anni accogliamo gli ospiti nel nostro casale,
-            con la semplicità di chi cucina per la propria famiglia.
+            Da oltre quarant'anni la famiglia Capodimonte accoglie gli ospiti nel suo casale
+            a Fiano Romano, con la semplicità di una cucina tradizionale laziale fatta in casa.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-3xl space-y-10 px-5 pb-16">
         <SectionDivider label="La nostra storia" />
+        <h2 className="sr-only">La nostra storia: tre generazioni di agriturismo a Fiano Romano</h2>
 
         <div className="space-y-6 text-lg leading-relaxed text-foreground/90">
           <p>
@@ -74,8 +91,9 @@ function ChiSiamo() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-24">
+        <h2 className="sr-only">La campagna romana intorno all'agriturismo</h2>
         <div className="grain grain-overlay overflow-hidden rounded-3xl">
-          <img src={campagna} alt="La nostra campagna" width={1280} height={960} loading="lazy" className="h-[40vh] w-full object-cover" />
+          <img src={campagna} alt="Campagna romana intorno ad Agriturismo Capodimonte, agriturismo a conduzione familiare vicino a Roma" width={1280} height={960} loading="lazy" className="h-[40vh] w-full object-cover" />
         </div>
       </section>
     </article>
