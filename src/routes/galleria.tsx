@@ -42,14 +42,14 @@ export const Route = createFileRoute("/galleria")({
 type Shot = { src: string; alt: string; span?: string };
 
 const shots: Shot[] = [
-  { src: hero, alt: "Il casale al tramonto", span: "sm:col-span-2 sm:row-span-2" },
-  { src: piatto, alt: "Fettuccine al ragù" },
-  { src: pergolato, alt: "Tavolata sotto il pergolato" },
-  { src: sala, alt: "La sala da pranzo", span: "sm:col-span-2" },
-  { src: campagna, alt: "Filari di ulivi e orto" },
-  { src: antipasto, alt: "Antipasto della casa" },
-  { src: esterno, alt: "Portico in pietra" },
-  { src: dolce, alt: "Tiramisù della nonna" },
+  { src: hero, alt: "Casale in pietra a due piani di Agriturismo Capodimonte al tramonto, con prato, cipressi e terrazza verso la campagna romana", span: "sm:col-span-2 sm:row-span-2" },
+  { src: piatto, alt: "Piatto di spaghetti al ragù in ciotola di ceramica rustica, con grana grattugiata e basilico su tavolo di legno" },
+  { src: pergolato, alt: "Tavolata apparecchiata sotto un pergolato di viti affacciato sui filari della vigna" },
+  { src: sala, alt: "Sala da pranzo del ristorante con pareti in pietra, travi a vista, pavimento in cotto e tavoli apparecchiati", span: "sm:col-span-2" },
+  { src: campagna, alt: "Campagna romana all'alba con filari di ulivi e vigneti che salgono verso le colline" },
+  { src: antipasto, alt: "Tagliere di antipasto con salumi, formaggi, olive, pomodorini e bruschette" },
+  { src: esterno, alt: "Ingresso in pietra del casale con pergolato di edera e vasi di terracotta" },
+  { src: dolce, alt: "Dolce a strati di crema e cacao servito in ciotola di ceramica" },
 ];
 
 function Galleria() {
