@@ -12,13 +12,29 @@ import { SectionDivider } from "../components/site/SectionDivider";
 export const Route = createFileRoute("/galleria")({
   head: () => ({
     meta: [
-      { title: "Galleria — Agriturismo Capodimonte" },
-      { name: "description", content: "Foto del casale, della sala da pranzo, dei piatti e della campagna dell'Agriturismo Capodimonte a Fiano Romano." },
-      { property: "og:title", content: "Galleria — Agriturismo Capodimonte" },
-      { property: "og:description", content: "Casale, sala, piatti e campagna di Fiano Romano." },
-      { property: "og:url", content: "/galleria" },
+      { title: "Agriturismo Capodimonte Fiano Romano | Galleria foto" },
+      {
+        name: "description",
+        content:
+          "Galleria fotografica di Agriturismo Capodimonte a Fiano Romano: il casale, la sala da pranzo, i piatti della cucina laziale, il pergolato e la campagna romana.",
+      },
+      { property: "og:title", content: "Agriturismo Capodimonte Fiano Romano | Galleria foto" },
+      {
+        property: "og:description",
+        content:
+          "Foto di Agriturismo Capodimonte, agriturismo a Fiano Romano nella campagna romana vicino a Roma: casale, sala, piatti e pergolato.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://agriturismocapodimonte.netlify.app/galleria" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Agriturismo Capodimonte Fiano Romano | Galleria foto" },
+      {
+        name: "twitter:description",
+        content:
+          "Foto del casale, della sala, dei piatti e della campagna di Agriturismo Capodimonte a Fiano Romano.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/galleria" }],
+    links: [{ rel: "canonical", href: "https://agriturismocapodimonte.netlify.app/galleria" }],
   }),
   component: Galleria,
 });
