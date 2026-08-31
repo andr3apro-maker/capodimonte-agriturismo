@@ -5,13 +5,29 @@ import { SectionDivider } from "../components/site/SectionDivider";
 export const Route = createFileRoute("/contatti")({
   head: () => ({
     meta: [
-      { title: "Contatti — Agriturismo Capodimonte, Fiano Romano" },
-      { name: "description", content: "Agriturismo Capodimonte — Via Civitellese 3, 00065 Fiano Romano (RM). Telefono 333 288 5510. Trova indicazioni e contatti." },
-      { property: "og:title", content: "Contatti — Agriturismo Capodimonte" },
-      { property: "og:description", content: "Via Civitellese 3, Fiano Romano (RM). Tel 333 288 5510." },
-      { property: "og:url", content: "/contatti" },
+      { title: "Agriturismo Capodimonte Fiano Romano | Contatti e come arrivare" },
+      {
+        name: "description",
+        content:
+          "Contatti di Agriturismo Capodimonte a Fiano Romano (RM): Via Civitellese 3, telefono 333 288 5510. Indicazioni stradali e orari del ristorante in campagna, vicino a Roma.",
+      },
+      { property: "og:title", content: "Agriturismo Capodimonte Fiano Romano | Contatti e come arrivare" },
+      {
+        property: "og:description",
+        content:
+          "Come raggiungere Agriturismo Capodimonte a Fiano Romano (RM): indirizzo, telefono, orari e indicazioni stradali dal casello A1, a circa 40 minuti da Roma.",
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:url", content: "https://agriturismocapodimonte.netlify.app/contatti" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Agriturismo Capodimonte Fiano Romano | Contatti e come arrivare" },
+      {
+        name: "twitter:description",
+        content:
+          "Contatti e indicazioni per Agriturismo Capodimonte a Fiano Romano (RM), ristorante in campagna vicino a Roma.",
+      },
     ],
-    links: [{ rel: "canonical", href: "/contatti" }],
+    links: [{ rel: "canonical", href: "https://agriturismocapodimonte.netlify.app/contatti" }],
   }),
   component: Contatti,
 });
@@ -21,14 +37,15 @@ function Contatti() {
   return (
     <article>
       <section className="mx-auto max-w-4xl px-5 pb-12 pt-24 text-center">
-        <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Contatti</span>
-        <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
-          Vieni a trovarci.
-        </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-          Siamo a Fiano Romano, a pochi minuti dal casello autostradale e
-          a circa 40 minuti dal centro di Roma.
-        </p>
+          <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Contatti</span>
+          <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
+            Agriturismo Capodimonte a Fiano Romano
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+            Agriturismo e ristorante a Fiano Romano (RM), nella campagna romana
+            a pochi minuti dal casello A1 e a circa 40 minuti da Roma. Ecco come
+            raggiungerci e prenotare il vostro tavolo.
+          </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-12">
@@ -38,7 +55,7 @@ function Contatti() {
       <section className="mx-auto max-w-6xl px-5 pb-16">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="font-display text-2xl">Indirizzo</h2>
+            <h2 className="font-display text-2xl">Indirizzo del ristorante a Fiano Romano</h2>
             <p className="mt-3 flex items-start gap-3 text-foreground/85">
               <MapPin className="mt-1 h-5 w-5 text-primary" strokeWidth={1.7} />
               <span>
@@ -94,12 +111,14 @@ function Contatti() {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="font-display text-2xl">Come arrivare</h2>
+            <h2 className="font-display text-2xl">Come arrivare ad Agriturismo Capodimonte</h2>
             <p className="mt-4 flex items-start gap-3 text-foreground/85">
               <Car className="mt-1 h-5 w-5 text-primary" strokeWidth={1.7} />
               <span>
-                A1 uscita Fiano Romano, poi seguire indicazioni per Civitellese.
-                Ampio parcheggio gratuito nel piazzale del casale.
+                Autostrada A1, uscita Fiano Romano, poi seguire le indicazioni
+                per Via Civitellese. L'agriturismo vicino a Roma è segnalato
+                dalla propria insegna. Ampio parcheggio gratuito nel piazzale
+                del casale.
               </span>
             </p>
           </div>
@@ -109,7 +128,7 @@ function Contatti() {
       <section className="mx-auto max-w-6xl px-5 pb-24">
         <div className="overflow-hidden rounded-3xl border border-border shadow-warm">
           <iframe
-            title="Mappa Agriturismo Capodimonte"
+            title="Mappa per raggiungere Agriturismo Capodimonte a Fiano Romano"
             src={`https://www.google.com/maps?q=${mapsQuery}&output=embed`}
             width="100%"
             height="450"
