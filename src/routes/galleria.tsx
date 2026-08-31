@@ -56,13 +56,14 @@ function Galleria() {
   return (
     <article>
       <section className="mx-auto max-w-4xl px-5 pb-12 pt-24 text-center">
-        <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Galleria</span>
-        <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
-          Sguardi dal casale.
-        </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-          Un piccolo album della nostra giornata: dall'orto al forno, dalla sala al pergolato.
-        </p>
+          <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Galleria</span>
+          <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
+            Agriturismo Capodimonte a Fiano Romano in foto
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+            Il casale, la sala da pranzo del ristorante, i piatti della cucina
+            laziale e la campagna romana: uno sguardo all'agriturismo vicino a Roma.
+          </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-8">
