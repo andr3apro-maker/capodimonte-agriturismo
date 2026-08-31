@@ -104,8 +104,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Restaurant",
+          "@type": ["Restaurant", "LocalBusiness"],
+          "@id": "https://agriturismocapodimonte.netlify.app/#agriturismo",
           name: "Agriturismo Capodimonte",
+          description:
+            "Agriturismo a Fiano Romano (RM): cucina tradizionale laziale e romana, prodotti dell'orto e ospitalità di famiglia nella campagna romana.",
+          url: "https://agriturismocapodimonte.netlify.app/",
+          image: [
+            "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b959e2c5-92a2-445a-a9e0-f81be340c9b8/id-preview-70d0e874--c2d6807e-ab8a-412e-8f9a-5c8276bcdf35.lovable.app-1782314168678.png",
+          ],
           servesCuisine: ["Italiana", "Laziale", "Romana"],
           priceRange: "€€",
           telephone: "+39 333 288 5510",
@@ -117,6 +124,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             addressRegion: "RM",
             addressCountry: "IT",
           },
+          areaServed: "Fiano Romano, Città metropolitana di Roma Capitale",
+          hasMap:
+            "https://www.google.com/maps/search/?api=1&query=Via%20Civitellese%203%2C%2000065%20Fiano%20Romano%20RM",
+          acceptsReservations: "https://agriturismocapodimonte.netlify.app/contatti",
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              opens: "12:30",
+              closes: "15:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              opens: "19:30",
+              closes: "22:30",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: "Tuesday",
+              opens: "00:00",
+              closes: "00:00",
+            },
+          ],
           sameAs: ["https://www.facebook.com/AgriturismoCapodimonte/"],
         }),
       },
