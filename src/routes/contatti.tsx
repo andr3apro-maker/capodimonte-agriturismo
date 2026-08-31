@@ -111,12 +111,14 @@ function Contatti() {
           </div>
 
           <div className="rounded-2xl border border-border bg-card p-8">
-            <h2 className="font-display text-2xl">Come arrivare</h2>
+            <h2 className="font-display text-2xl">Come arrivare ad Agriturismo Capodimonte</h2>
             <p className="mt-4 flex items-start gap-3 text-foreground/85">
               <Car className="mt-1 h-5 w-5 text-primary" strokeWidth={1.7} />
               <span>
-                A1 uscita Fiano Romano, poi seguire indicazioni per Civitellese.
-                Ampio parcheggio gratuito nel piazzale del casale.
+                Autostrada A1, uscita Fiano Romano, poi seguire le indicazioni
+                per Via Civitellese. L'agriturismo vicino a Roma è segnalato
+                dalla propria insegna. Ampio parcheggio gratuito nel piazzale
+                del casale.
               </span>
             </p>
           </div>
