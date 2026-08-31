@@ -39,17 +39,17 @@ function ChiSiamo() {
       {/* Hero */}
       <section className="relative isolate">
         <div className="absolute inset-0 -z-10">
-          <img src={esterno} alt="Portico in pietra del casale Capodimonte" width={1280} height={960} className="h-full w-full object-cover" />
+          <img src={esterno} alt="Casale di Agriturismo Capodimonte, agriturismo a conduzione familiare a Fiano Romano nella campagna romana" width={1280} height={960} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
         </div>
         <div className="mx-auto max-w-4xl px-5 pb-20 pt-36 text-center">
           <span className="text-[11px] uppercase tracking-[0.25em] text-primary">Chi siamo</span>
           <h1 className="mt-4 font-display text-5xl leading-[1.05] sm:text-6xl">
-            Una famiglia, una terra,<br />una cucina di casa.
+            Agriturismo a conduzione familiare<br />a Fiano Romano, nella campagna romana
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Da oltre quarant'anni accogliamo gli ospiti nel nostro casale,
-            con la semplicità di chi cucina per la propria famiglia.
+            Da oltre quarant'anni la famiglia Capodimonte accoglie gli ospiti nel suo casale
+            a Fiano Romano, con la semplicità di una cucina tradizionale laziale fatta in casa.
           </p>
         </div>
       </section>
