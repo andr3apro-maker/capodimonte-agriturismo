@@ -71,6 +71,7 @@ function Galleria() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-24">
+        <h2 className="sr-only">Foto del casale, della cucina e della campagna di Agriturismo Capodimonte</h2>
         <div className="grid auto-rows-[220px] grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
           {shots.map((s, i) => (
             <figure
